@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/icon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link" id="">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link" id="">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code</a>
+            </li>
+            <li class="nav-item">
+              <a href="#courses" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#english" class="nav-link">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main-container">
+        <section class="section section-profile" id="profile">
+          <img src="assets/avatar.jpeg" alt="myPhoto" class="section-profile-logo" />
+          <div class="section-profile-title">
+            <h1 class="section-title main-title">Nerobelov Aleksey</h1>
+            <h3 class="section-subtitle">Junior JS Developer</h3>
+            <h3 class="section-subtitle">Saint Petersburg</h3>
+          </div>
+        </section>
+        <section class="section wide-section" id="summary">
+          <h2 class="section-title">About me</h2>
+          <p>
+            Enthusiastic focused and motivated Junior Developer with technical background, quick learner and passionate about development. I've completed several training projects and now I would like to take part in the creation of a real JavaScript project. Enjoy working with a team to overcome obstacles and challenges. I would like to work under the guidance of an experienced developer to gain practical experience. 
+
+          </p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title">Skills</h2>
+          <ul class="section-list">
+            <li class="section-item">
+              Hard Skills:<span> HTML5, CSS3, JavaScript, React, GIT, Github, Figma</span>
+            </li>
+            <li class="section-item">
+              Soft-skills:<span> time-managment, attantion to details, teamwork, active listening </span>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code</h2>
+          <div class="code-box"><pre class="pre"><code>function find_average(array) {
+  if (array.length > 0){
+    let masSumm = array.reduce((sum, current) => sum + current, 0)
+    return masSumm/array.length
+  }
+  return 0;
+ }      
+   </code></pre>
+          </div>
+        </section>
+        <section class="section" id="courses">
+          <h2 class="section-title">Course</h2>
+          <p>Front-end developer - Vladilen Minin (in process)</p>
+          <p>Stage 0 - Rolling Scopes school (in process)</p>
+          <p>React - IT-camasutra YouTube-channel (in process)</p>
+        </section>
+        <section class="section" id="projects">
+          <h2 class="section-title">Projects</h2>
+          <ul class="section-list">
+            <li class="section-item">
+              <a href="https://NeroAlex9.github.io/rsschool-cv/">RSschool-CV</a>
+            </li>
+          </ul>
+        </section>
+        <section class="section section-education" id="education">
+          <h2 class="section-title">Education</h2>
+          <p>Ivanovo State Power University</p>
+        </section>
+        <section class="section section-english" id="english">
+          <h2 class="section-title">Languages</h2>
+          <p>Russian - Native</p>
+          <p>English - Pre-Intermediate</p>
+          <p>German - Elementary</p>
+        </section>
+        <section class="section wide-section" id="contacts">
+          <h2 class="section-title">Contact me</h2>
+          <ul class="section-list contacts-list">
+            <li class="section-item contact-item">
+              Email:
+              <a href="mailto:Nerobelov1997@mail.ru" title="Email"
+                >Nerobelov1997@mail.ru</a
+              >
+            </li>
+            <li class="section-item contact-item">
+              Github:
+              <a href="https://github.com/neroalex9" title="Github"
+                >NeroAlex9</a
+              >
+            </li>
+            <li class="section-item contact-item">
+              Telegramm:
+              <a href="https://t.me/neroalexNFT" title="Telegram"
+                >NeroAlexNFT</a
+              >
+            </li>
+            <li class="section-item contact-item">
+              Linkedin:
+              <a href="https://www.linkedin.com/in/neroalex/" title="Linkedin"
+                >NeroAlex</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container footer-container">
+        <p class="date">2022</p>
+        <a href="https://github.com/neroalex9" class="github nav-link"
+          >NeroAlex9</a
+        >
+        <a href="https://rs.school/js/" class="rss"><img
+          src="assets/rs_school_js.svg"
+          alt="RS"
+          class="rss-logo"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

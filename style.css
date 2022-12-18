@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+header {
+  background-color: #525b56;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 20px;
+  line-height: 50px;
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  color: hsl(34, 78%, 91%);
+  cursor: grab;
+}
+
+.nav-link:hover {
+  color: #a4978e;
+  transition: color 0.5s;
+}
+
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section {
+  width: calc(50% - 20px);
+  padding: 20px;
+  color: #a47547;
+}
+
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #525b56;
+}
+
+.main-title {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  color: rgb(250, 234, 214);
+}
+
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #c28f6a;
+}
+
+
+.section-profile-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;  
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wide-section {
+  width: 100%;
+  text-align: center;
+  color: rgb(250, 234, 214);
+  background-color: #a47547;
+}
+
+.wide-section .section-title {
+  color: rgb(250, 234, 214);
+}
+
+
+.section-subtitle {
+  
+  margin: 0;
+  padding: 0;
+  color: #5c5c5c;
+  line-height: 40px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+
+
+.section-profile-logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-left: 30px;
+}
+
+span {
+  color: #525b56;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.pre {
+  padding: 0;
+  margin: 0;
+}
+
+.section-item a {
+  text-decoration: none;
+  color: #a4978e;
+  transition: color 0.5s;
+}
+.wide-section a {
+  color: rgb(250, 234, 214);
+  transition: color 0.5s;
+  text-decoration: underline;
+}
+.section-item a:hover {
+  color: #a4978e;
+}
+
+.code-box {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #525b56;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: hsl(34, 78%, 91%);
+  max-width: 1440px;
+}
+
+.github {
+  color: hsl(34, 78%, 91%);
+  text-decoration: none;
+  line-height: 45px;
+}
+
+.rss {
+  width: 121px;
+  height: 45px;
+  background-image: url("./assets/svg/rss.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+@media (max-width: 1440px){
+.container {
+    padding: 0 0px;
+ }
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+  .section-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav {
+    display: none;
+  }
+  .toggle {
+    display: flex;
+  }
+  .nav.collapsed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 525px;
+    flex-direction: column;
+    background-color: #829985;
+  }
+  .nav-list.collapsed {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+}
